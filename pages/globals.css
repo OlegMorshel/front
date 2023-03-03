@@ -70,6 +70,7 @@ video {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
+	font-family: 'Outfit', sans-serif;
 }
 
 footer,
@@ -87,6 +88,7 @@ body {
 ol,
 ul {
 	list-style: none;
+	font-family: 'Outfit', sans-serif;
 }
 
 blockquote,
@@ -115,6 +117,7 @@ input {
 html,
 body {
 	@apply bg-gray-900;
+	font-family: 'Outfit', sans-serif;
 }
 
 :root {
