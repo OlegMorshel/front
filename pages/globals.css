@@ -2,6 +2,8 @@
 @tailwind utilities;
 @tailwind components;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 *,
 *:before,
 *:after {
@@ -108,4 +110,22 @@ table {
 input {
 	-webkit-appearance: none;
 	border-radius: 0;
+}
+
+html,
+body {
+	@apply bg-gray-900;
+}
+
+:root {
+	--primary-color: #e30b13;
+}
+
+imput[type='file'],
+imput[type='file']::-webkit-file-upload-button {
+	@apply cursor-pointer focus:outline-none;
+}
+
+input:focus {
+	box-shadow: none !important;
 }

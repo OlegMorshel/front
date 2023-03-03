@@ -2,7 +2,7 @@ $bar-width: 20%;
 $max-bar-width: 350px;
 
 .container {
-	@apply fixed top-0 bottom-0 overflow-y-auto right-0 border-l border-l-gray-800;
+	@apply fixed top-0 bottom-0 overflow-y-auto right-0 border-l border-l-gray-800 border-solid;
 	width: $bar-width;
 	max-width: $max-bar-width;
 }
