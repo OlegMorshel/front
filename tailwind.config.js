@@ -1,16 +1,22 @@
-/** @type {import('tailwindcss').Config} */
-const colors = require('tailwind/colors')
-const plugin = reqquire('tailwind/plugin')
+const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/colors')
 const primary = '#E30B13'
 
 module.exports = {
 	content: [
-		'./pages/**/*.{js,jsx,ts,tsx}',
-		'./app/components/**/*.{js,jsx,ts,tsx}',
+		'./app/components/**/*.{js,ts,jsx,tsx}',
+		'./pages/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
+		screens: {
+			sm: '640px',
+			md: '768px',
+			lg: '1024px',
+			xl: '1280px',
+			'2xl': '1536px',
+		},
 		colors: {
-			primary,
+			primary: primary,
 			black: colors.black,
 			white: colors.white,
 			transparent: colors.transparent,
@@ -39,7 +45,7 @@ module.exports = {
 				image: '0.5rem',
 				layout: '0.8rem',
 			},
-			transitionTimingFuction: {
+			transitionTimingFunction: {
 				DEFAULT: 'ease-in-out',
 			},
 			transitionDuration: {
@@ -87,7 +93,6 @@ module.exports = {
 						backgroundColor: '#ff0009',
 					},
 				},
-
 				'.text-link': {
 					textUnderlineOffset: 4,
 					color: 'rgba(255,255,255,0.9)',
@@ -98,7 +103,6 @@ module.exports = {
 						textDecorationColor: 'rgba(255,255,255,0.9)',
 					},
 				},
-
 				'.air-block': {
 					borderRadius: theme('borderRadius.layout'),
 					backgroundColor: theme('colors.gray.950'),
@@ -110,18 +114,15 @@ module.exports = {
 					'.text-shadow': {
 						textShadow: '1px 1px rgba(0, 0, 0, 0.4)',
 					},
-
 					'.outline-border-none': {
 						outline: 'none',
 						border: 'none',
 					},
-
 					'.flex-center-between': {
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'space-between',
 					},
-
 					'.image-like-bg': {
 						objectPosition: 'center',
 						objectFit: 'cover',
