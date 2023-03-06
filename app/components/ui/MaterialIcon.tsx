@@ -9,7 +9,7 @@ type Props = {
 
 const MaterialIcon: FC<Props> = ({ name }) => {
 	const IconComponent = MaterialIcons[name]
-	return <IconComponent /> || <MaterialIcons.MdDragIndicator />
+	return <IconComponent /> || MaterialIcons.Md10K
 }
 
 export default MaterialIcon

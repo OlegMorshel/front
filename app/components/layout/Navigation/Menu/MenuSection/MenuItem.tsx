@@ -20,7 +20,7 @@ const MenuItem: FC<Props> = ({ item }) => {
 			})}
 		>
 			<Link href={item.link}>
-				<MaterialIcon name={item.icon} />
+				{item.icon !== undefined && <MaterialIcon name={item.icon} />}
 				<span className={styles.title}>{item.title}</span>
 			</Link>
 		</li>
